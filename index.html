@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos del Proveedor</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">Datos del proveedor</div>
+        
+        <form action="guardar.php" method="POST">
+            <div class="input-group">
+                <label>Nombre</label>
+                <input type="text" name="nombre" required>
+            </div>
+
+            <div class="input-group">
+                <label>Dirección</label>
+                <textarea name="direccion" placeholder="Dirección" required></textarea>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Teléfono residencial</label>
+                    <input type="text" name="telefono_residencial" placeholder="Teléfono residencial">
+                </div>
+                <div class="input-group">
+                    <label>Celular</label>
+                    <input type="text" name="celular" placeholder="Teléfono celular">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <button type="submit" name="btn_guardar" class="btn-guardar">Guardar</button>
+        </form>
+    </div>
+
+</body>
+</html>
